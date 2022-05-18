@@ -1,0 +1,109 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Yeon+Sung&display=swap'); 
+
+body {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nanum Pen Script';
+  min-height: 100vh;
+  margin: 0px;
+}
+
+@media (min-width: 650px) {
+  .App {
+    width: 640px;
+  }
+}
+
+@media (max-width: 650px) {
+  .App {
+    width: 90vw;
+  }
+}
+
+#root {
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.App {
+  min-height: 100vh;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+/* MyBtton */
+
+.MyButton {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 18px;
+
+  white-space: nowrap; 
+  /* 버튼 안에 있는 글자가 잘려서 두 줄이 되지 않게 하는 것 */
+}
+
+.MyButton_default{
+  background-color: #ececec;
+  color: black;
+}
+
+.MyButton_positive{
+  background-color: #64c964;
+  color: white;
+}
+
+.MyButton_negative{
+  background-color: #fd565f;
+  color: white;
+}
+
+/* HEADER */
+header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 1px solid #e2e2e2;
+}
+
+header > div {
+  display: flex;
+}
+
+header .head_text {
+  width: 50%;
+  font-size: 25px;
+  justify-content: center;
+}
+
+header .head_btn_left{
+  width: 25%;
+  justify-content: start;
+}
+
+header .head_btn_right{
+  width: 25%;
+  justify-content: end;
+}
+
+header button{
+  font-family: 'Nanum Pen Script';
+}
+
+/* .App {
+  padding:20px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-family: 'Yeon Sung', cursive;
+폰트는 같은 속성이 여러줄로 나오면 가장 마지막 속성을 따른다. 같은 라인에서는 가장 첫번째 나오는 속성을 따른다.*/
